@@ -28,7 +28,7 @@ body {
    align-items: flex-start; 
 }
 
-.galeria h1 {
+.galeria__titulo {
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -36,7 +36,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.card {
+.galeria__card {
   width: 250px;
   padding: 1em;
   border-radius: 1em;
@@ -48,10 +48,14 @@ body {
   padding: 1.2em;
 
   flex: 0 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.card img {
+.galeria__card-imagen {
   width: 100%;
   max-width: 220px;
   height: 300px; 
@@ -60,31 +64,31 @@ body {
   padding: 0.5em;
 }
 
-.card1 {
+.galeria__card--style-1 {
   background-color: #1e90ff; 
 }
 
-.card2 {
+.galeria__card--style-2 {
   background-color: rgb(255, 99, 71); 
 }
 
-.card3 {
+.galeria__card--style-3 {
   background: rgb(60, 179, 113);
 }
 
-.card4 {
+.galeria__card--style-4 {
   background: linear-gradient(45deg, #ffcc00, #ff6600);
 }
 
-.card5 {
+.galeria__card--style-5 {
   background: radial-gradient(circle, #ff69b4, #8a2be2);
-}
+} 
 
-.card p {
+.galeria__card-nombre {
   font-size: 1rem;   
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 2px 4px #000;  
 }
